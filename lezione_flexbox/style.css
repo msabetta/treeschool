@@ -1,0 +1,45 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    border: 2px solid black;
+}
+
+.header{
+    border: 2px solid black;
+}
+
+.main{
+    border: 2px solid black;
+}
+
+.navbar{
+
+}
+
+.hero-image{
+
+}
+
+
+h1{
+
+}
+
+
+div{
+
+}
+
+li{
+
+}
+
+ul{
+    direction: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+body{
+    
+}
