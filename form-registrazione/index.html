@@ -4,7 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Analitica 4.0</title>
-    <style>
+    <link rel="stylesheet" href="./css/style.css">
+    <!-- <style>
       .fa {
         padding: 20px;
         font-size: 30px;
@@ -180,19 +181,34 @@
           float: none;
         }
       }
-    </style>
+    </style> -->
   </head>
   <body>
+    <header>
+      <nav>
+        <ul>
+          <li>Home</li>
+          <li>About</li>
+          <li>Contacts</li>
+        </ul>
+      </nav>
+    </header>
+
+
     <div class="header">
-      <a href="#default" class="logo"><img src="analitica.png" alt="" /></a>
-      <div class="header-right">
+      <a href="#default" class="logo">
+        <img src="images/analytics.jpg" alt="logo1" width="200" height="200" />
+        <img src="images/Data-Analytics-Logo.jpg" alt="logo2" width="200" height="200">
+      </a>
+  <!-- <div class="header-right">
         <a class="active" href="#home">Home</a>
         <a href="#contact">Contact</a>
         <a href="#about">About</a>
-        <!--        <button class="tablink" onclick="openCity('London', this, 'red')" id="defaultOpen">Home</button>
+            <button class="tablink" onclick="openCity('London', this, 'red')" id="defaultOpen">Home</button>
             <button class="tablink" onclick="openCity('Paris', this, 'green')">Contact</button>
-            <button class="tablink" onclick="openCity('Tokyo', this, 'blue')">About</button> -->
-      </div>
+            <button class="tablink" onclick="openCity('Tokyo', this, 'blue')">About</button> 
+        </div> 
+  -->
     </div>
 
     <br />
@@ -202,7 +218,8 @@
     <main>
       <div>
         <form action="ii">
-          &nbsp<label for="name"> Nome: </label> &nbsp<input
+          &nbsp<label for="name"> Nome: </label> 
+          &nbsp<input
             name="name"
             id="name"
             type="text"
@@ -220,22 +237,26 @@
           />
           <br />
           <br />
-          &nbsp<label for="surname"> Email Address: </label> &nbsp<input
-            name="surname"
-            id="surname"
-            type="text"
+          &nbsp<label for="email"> Email Address: </label> &nbsp<input
+            name="email"
+            id="email"
+            type="email"
             placeholder="Il tuo indirizzo email"
             required
           />
           <br />
           <br />
+          &nbsp<label for="password"> Password: </label> &nbsp<input
+          name="password"
+          id="password"
+          type="password"
+          placeholder="La tua password"
+          required
+        />
           <br />
           <br />
-          &nbsp&nbsp<button type="submit">INVIA</button> &nbsp&nbsp<button
-            type="reset"
-          >
-            CANCELLA
-          </button>
+          &nbsp&nbsp<button type="submit">INVIA</button> 
+          &nbsp&nbsp<button type="reset">CANCELLA</button>
         </form>
       </div>
     </main>
@@ -280,7 +301,18 @@
         <a href="mailto:m.sabetta89@gmail.com">m.sabetta89@gmail.com</a>
       </p>
 
-      &nbsp&nbsp © Tutti i diritti riservati
+      &nbsp&nbsp © All rights reserved. Created by Mario Sabetta
     </footer>
+
+    <footer>
+      <ul>
+        <li>Contacts</li>
+        <li>Instagram</li>
+        <li>Facebook</li>
+      </ul>
+    </footer>
+
+
+
   </body>
 </html>
