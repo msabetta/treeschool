@@ -1,0 +1,37 @@
+@import "styles_page.css";
+
+body {
+  background-color: red;
+}
+
+@media screen and (max-width: 480px) {
+
+  @import "styles_page.css";
+    
+    
+  body {
+    background-color: blue;
+  }
+
+/*   .module{
+    gap: 0;
+  }
+
+  .box{
+    display: flex;
+    flex-direction: column;
+  } */
+
+}
+
+@media screen and (max-width: 760px) {
+  
+  @import "styles_page.css";
+  
+  body {
+    background-color: yellow;
+  }
+}
+
+
+
