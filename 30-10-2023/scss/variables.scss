@@ -1,0 +1,51 @@
+//variabili
+
+//colours
+$dark-color: #04364A;
+$light-color: #dafffb;
+$hover-color: #64ccc5;
+$primary-color: #176B87;
+$bgcolor: orange; 
+$position_footer: bottom;
+$margin-top-footer: 100px;
+
+//images
+$position: absolute;
+$top: left;
+$zoom_img: 20%;
+
+//fonts
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@700&family=Roboto:wght@100&display=swap');
+$primary-font: "Roboto Mono", monospace;
+$border-radius-def: 16px;
+
+//mixins
+@mixin btn{
+    padding: 5px;
+    border: none;
+    background-color: $light-color;
+    border-radius: $border-radius-def;
+    color: $light-color;
+    cursor: pointer;
+    //equivale a btn:hover
+    &:hover{
+        transform: scale(1.3);
+    }
+
+}
+
+@mixin important-text {
+    color: red;
+    font-size: 25px;
+    font-weight: bold;
+    border: 1px solid blue;
+}
+
+
+@mixin display-flex{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+

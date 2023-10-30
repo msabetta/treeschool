@@ -1,0 +1,39 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+
+img{
+    zoom: 20%;
+}
+
+body{
+    background-color: aquamarine;
+}
+
+
+footer{
+    position: bottom;
+    margin-top: 100px;
+}
+
+
+nav{
+    ul{
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+    li{
+        display: inline-block;
+    }
+
+    a{
+        display: block;
+        text-align: center;
+    }
+}
+
+
+
