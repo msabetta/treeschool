@@ -241,6 +241,14 @@ const drivers = [
 ];
 
 
+/*
+for (let k = 0; k < clienti.length; k++) {
+    if (clienti[k].età < 18 || clienti[k].età > 60) {console.log(clienti[k].nome + " hai raggiunto il limite di età")}
+    else if (clienti[k].nome.startsWith("r")) {console.log(clienti[k].nome + " la patente costa €500 ma hai uno sconto del 20%")}
+    else {console.log(clienti[k].nome + " la patente costa €500")}
+}
+*/
+
 for (let i = 0; i < drivers.length; i++) {
     if (drivers[i].age < 18)
         console.log(drivers[i].name + " sei invitato/a ad uscire per limite di età insufficiente");
@@ -258,3 +266,5 @@ for (let i = 0; i < drivers.length; i++) {
 
     }
 }
+
+
