@@ -1,0 +1,13 @@
+Dati i due  numeri 9 e 11. Stampare la loro somma.
+
+Data la stringa "il mio primo esercizio in Javascript" stamparla con tutti i caratteri maiuscoli
+
+Data la stringa "Javascript è case-sensitive" stamparne la lunghezza
+
+Data la stringa "Italia" stampare il primo e l'ultimo carattere
+
+Date due stringhe "Roma" e "Catania " sommare le loro lunghezze
+
+Data la stringa "Pizza" stampare la SOTTOSTRINGA che va dal secondo carattere fino alla fine della stringa
+
+
