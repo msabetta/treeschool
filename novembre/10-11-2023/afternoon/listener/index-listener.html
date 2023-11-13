@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Students List Demo</h1>
+    
+    <input id="input-name" type="text" placeholder="Nome Studente"/>
+    
+    <button id="confirm-name">Submit</button>
+    
+    <h3>Lista Studenti</h3>
+
+    <ul id="students-list">
+        <li id="student-item-1">Riccardo</li>
+    </ul>
+    <script>
+        console.log(window.document);
+
+        let students = [{
+            id: 1,
+            name: "Riccardo"
+        }];
+
+        let nextElementId = 2;
+
+        function addStudent(name){
+            // preparare un nuovo li che abbia
+            const nextListItem = document.createElement("li");
+            // - testo con nome
+            nextListItem.innerText =  name;
+            // - attributo id con stringa concatenata conforme a "student-item-{id}"
+            nextListItem.id = "student-item-" + nextElementId;
+
+            // appendere il nostro elemento nel DOM
+            const studentsUlElement = document.getElementById("students-list");
+            studentsUlElement.appendChild(nextListItem);
+
+            // riflettiamo questo nuovo elemento sul nostro array students
+            students = students.concat([
+                {name: name, id: nextElementId}
+            ]);
+
+            // incrementare id
+            nextElementId++;
+        }
+
+        //EVENT LISTENER
+        document.getElementById("confirm-name")
+                .addEventListener(
+                    "click", //nome evento che vogliamo ascoltare
+                    function(){
+                       debugger;
+                       //recuperiamo il valore dell'input
+                       const inputTextElement = document.getElementById("input-name");
+                       // aggiungiamo lo studente dal valore dell'input
+                       addStudent(inputTextElement.value);            
+                       
+                       //svuotiamo l'input per prepararlo alla prossima immissione
+                       inputTextElement.value = "";
+                    }
+                )
+
+    </script> 
+</body>
+</html>

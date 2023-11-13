@@ -1,0 +1,10 @@
+.riquadro {
+    width: 200px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 20px;
+    margin-top: 50px;
+    border-left: 5px solid black;
+    border-right: 5px solid black;
+    display: inline;
+}
