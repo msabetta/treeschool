@@ -29,6 +29,19 @@ function libri(nome, autore, letto, dataDiPubblicazione, capitoli) {
         console.log("NOME: " + this.nome + "AUTORE: " + this.autore + "ANNO: " + this.anno);
     }
 
+    this.stampaPagineCapitoli2 = function () {
+        for (var capitolo of this.capitoli) {
+            console.log(capitolo[0], capitolo[1]);
+        }
+    }
+
+    this.stampaTotali = function () {
+        var mumeroPagine = 0;
+        for (var libro of arrayLibri) {
+            numeroPagine += libro.numeroTotaleDiPagine();
+        }
+    }
+
 }
 
 let lib1 = new libri("Inferno", "Dan Brown", true, "31/12/2006", [[1, 4], [2, 5]]);
@@ -39,6 +52,8 @@ stampaPagineCapitoli = function (libro) {
     console.log(pagineCapitoli)
 }
 
+
+
 stampaPagineCapitoli(lib1);
 
 
@@ -46,15 +61,19 @@ stampaPagineTotali = function (capitoli) {
     console.log(capitoli.length * 2);
 }
 
+var mumeroPagine = 0;
+for (var libro of arrayLibri) {
+    numeroPagine += libro.numeroTotaleDiPagine();
+}
 
 stampaPagineTotali(lib1.capitoli);
 
 
 let arrayLibri = [
-    new libri("Inferno", "Dan Brown", true, "31/12/2006", [[1, 4], [2, 5]]),
-    new libri("Divina Commedia", "Dante Alighieri", false, "1/1/1998", [[5, 8], [1, 10]]),
-    new libri("Promessi Sposi", "Alessandro Manzoni", true, "13/2/2008", [[31, 6], [6, 10], [6, 77]]),
-    new libri("Divina Commedia", "Dante Alighieri", false, "1/5/1998", [[5, 8], [1, 10], [8, 21]])
+    new libri("Inferno", "Dan Brown", true, new Date(2006, 11, 1), [[1, 4], [2, 5]]),
+    new libri("Divina Commedia", "Dante Alighieri", false, new Date(2006, 11, 1), [[5, 8], [1, 10]]),
+    new libri("Promessi Sposi", "Alessandro Manzoni", true, new Date(2006, 11, 1), [[31, 6], [6, 10], [6, 77]]),
+    new libri("Divina Commedia", "Dante Alighieri", false, new Date(2006, 11, 1), [[5, 8], [1, 10], [8, 21]])
 ];
 
 
@@ -71,20 +90,20 @@ stampaPagineTotaliLibriLetti = function () {
 
     let sommaTotale = 0;
 
-/*     arrayLibri.forEach(libro => {
-        for(let i=0; i<libro.capitoli.length; i++)
-            sommaTotale = libro.capitoli[i][1];
-    } ); */
+    /*     arrayLibri.forEach(libro => {
+            for(let i=0; i<libro.capitoli.length; i++)
+                sommaTotale = libro.capitoli[i][1];
+        } ); */
     console.log();
     libriLetti = arrayLibri.filter(libro => libro.letto == true);
 
-    for(let i=0; i<libriLetti.length; i++){
-        for(j=0;j<libriLetti[i].capitoli.length;j++){
+    for (let i = 0; i < libriLetti.length; i++) {
+        for (j = 0; j < libriLetti[i].capitoli.length; j++) {
             sommaTotale += libriLetti[i].capitoli[j][1];
         }
     }
 
-    
+
 
     console.log(sommaTotale);
 }

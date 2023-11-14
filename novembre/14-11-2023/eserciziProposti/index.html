@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Libreria</title>
+  </head>
+  <body>
+    <link rel="stylesheet" href="style.css">
+    <form onsubmit="cercaLibriAutore()">
+      AUTORE: <input type="text" id="autore" style="display:flex" />
+      <br>
+      NOME LIBRO: <input type="text" id="libro" style="display:flex" />
+      <br>
+      DATA DI PUBBLICAZIONE: <input type="date" id="dataPubblicazione" style="display:flex" />
+      <br>
+      NUMERO DI PAGINE TOTALI DEL LIBRO: <input type="text" id="numtot" style="display:flex" />
+      <br>
+      <button type="button" id="find" class="find" >FIND</button>
+      <button type="button" id="insert" class="insert" >INSERT</button>
+      <button type="button" id="delete" class="delete" >DELETE</button>
+      <button type="button" id="clear" class="clear" >CLEAR</button>
+    </form>
+
+    <table id="table" style="justify-content: center">
+      <thead id="table-head">
+        <tr id="etichette">
+          <th>Libro</th>
+          <th>Autore</th>
+          <th>Data di pubblicazione</th>
+          <th># pagine totali</th>
+        </tr>
+      </thead>
+      <tbody id="tabella-body">
+      </tbody>
+    </table>
+    <script src="esercizi.js"></script>
+  </body>
+</html>
