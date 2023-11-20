@@ -23,9 +23,13 @@ function getUrl(url) {
 
 async function testChiamata() {
     try {
-        let dati = await getUrl("https://jsonplaceholder.typicode.com/posts/1");
-        //let dati = await getFetch("https://jsonplaceholder.typicode.com/posts/1");
+        //let dati = await getUrl("https://jsonplaceholder.typicode.com/posts/1");
+        let dati = await getFetch("https://jsonplaceholder.typicode.com/posts/1");
         console.log(dati);
+        JSON.stringify(dati);
+        let json_string = '{"userid": "patrizia", "status":"OK"}';
+
+        JSON.parse(json_string);
 
     } catch (e) {
         console.log("Errore", e);

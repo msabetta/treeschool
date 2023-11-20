@@ -1,0 +1,11 @@
+Guide React
+- https://www.html.it/guide/react-la-guida/
+- https://react.dev/
+- https://www.w3schools.com/REACT/default.asp
+
+Babel
+- https://babeljs.io/docs/configuration
+- https://babeljs.io/setup
+
+video youtube: https://www.youtube.com/watch?v=8pDqJVdNa44
+

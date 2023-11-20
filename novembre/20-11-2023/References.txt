@@ -1,0 +1,5 @@
+References
+- https://www.tecmint.com/install-reactjs-on-ubuntu/
+- https://stackoverflow.com/questions/8191459/how-do-i-update-node-js
+- https://kinsta.com/it/blog/come-installare-node-js/#come-installare-nodejs-su-macos
+
