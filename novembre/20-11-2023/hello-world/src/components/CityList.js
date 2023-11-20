@@ -1,6 +1,6 @@
 import React from 'react';
 
-const cities = ['Roma', 'Parigi', 'New York'];
+const cities = ['Roma', 'Napoli', 'Milano', 'Firenze'];
 
 const CityList = () => {
     return (
