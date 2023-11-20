@@ -1,7 +1,9 @@
-import logo from './logo.svg';
+//import logo from './logo.svg';
 import './App.css';
 import sum, { multiply, myFavouriteOperation } from './utils'
 import Student from './Student';
+import Section from './Section';
+import Solution from './Solution';
 
 console.log(sum(2, 2));
 console.log(multiply(3, 2));
@@ -62,39 +64,83 @@ function HelloWorld() {
 }
 
 
-function App() {
+/* function App() {
 
   const isFirstTimeISeeReact = true;
   if (isFirstTimeISeeReact) {
     return (
       <>
         {/* <HelloWorld />
-        <MultipleFirstLevelElements /> */}
-   {/*      <MakeHobbies /> */}
-        <Student />
-      </>
-    );
-  }
-  return <h1>Boring, I already know everything</h1>
-  /*   return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <HelloWorld />
-  {/*         <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a> *///}
-  // </header>
-  // </div>
-  // ); */
+        <MultipleFirstLevelElements /> *///}
+{/*      <MakeHobbies /> */ }
+{/*         <Student /> */ }
+     // </>
+    //);
+  //}
+//return <h1>Boring, I already know everything</h1>
+/*   return (
+    <div className="App">
+      <header className="App-header">
+        <img src={logo} className="App-logo" alt="logo" />
+        <HelloWorld />
+{/*         <p>
+          Edit <code>src/App.js</code> and save to reload.
+        </p>
+        <a
+          className="App-link"
+          href="https://reactjs.org"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Learn React
+        </a> *///}
+// </header>
+// </div>
+// ); */
+//} * /
+
+function App() {
+  return (
+    <>
+      <Solution additionalText={"ci sono solo se c'è children"} >
+        <p>ehi sono il children</p>
+      </Solution>
+
+      <Solution additionalText={"ci sono solo se c'è children"} >
+      </Solution>
+
+      <Section
+        title="React components"
+
+      >
+        <p>I componenti React sono divertentissimi</p>
+
+      </Section>
+      <Section
+        className="special-section"
+        title="React Props"
+        onClick={() => { console.log("react props") }}
+      >
+        <p>Le props sono potentissime</p>
+
+      </Section>
+
+      <Section
+        title="React state"
+        onClick={() => { console.log("react state") }}
+      />
+
+      {/* <Section
+        title="React state"
+        onClick={() => { console.log("react state") }}
+        children={() => { <p>altro testo</p> }}
+      /> */}
+
+  
+   
+
+    </>
+  );
 }
 
 export default App;
