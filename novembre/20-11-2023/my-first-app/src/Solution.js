@@ -9,12 +9,21 @@ import React from 'react';
 
 
 function Solution(props) {
-    return (
-        <div>
-            {props.children}
-            {props.children ? <p>{props.additionalText}</p> : null} 
+    /*     return (
+            <div>
+                {props.children}
+                {props.children ? <p>{props.additionalText}</p> : null} 
             </div>
-    );
+        ); */
+    if (props.children) {
+        return (
+            <>
+                {props.children}
+                <p>{props.additionalText}</p>
+            </>
+        );
+    }
+
 }
 
 export default Solution;

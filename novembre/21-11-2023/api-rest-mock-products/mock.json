@@ -1,0 +1,79 @@
+[
+  {
+    "id": 0,
+    "name": "Prodotto ZERO",
+    "price": "33.00",
+    "description": "Descrizione del Prodotto ZERO",
+    "stock": 50
+  },
+  {
+    "id": 1,
+    "name": "Prodotto A",
+    "price": "47.00",
+    "description": "Descrizione del Prodotto A",
+    "stock": 34
+  },
+  {
+    "id": 2,
+    "name": "Prodotto B",
+    "price": "82.00",
+    "description": "Descrizione del Prodotto B",
+    "stock": 72
+  },
+  {
+    "id": 3,
+    "name": "Prodotto C",
+    "price": "15.00",
+    "description": "Descrizione del Prodotto C",
+    "stock": 51
+  },
+  {
+    "id": 4,
+    "name": "Prodotto D",
+    "price": "60.00",
+    "description": "Descrizione del Prodotto D",
+    "stock": 9
+  },
+  {
+    "id": 5,
+    "name": "Prodotto E",
+    "price": "37.00",
+    "description": "Descrizione del Prodotto E",
+    "stock": 88
+  },
+  {
+    "id": 6,
+    "name": "Prodotto A",
+    "price": "23.00",
+    "description": "Descrizione del Prodotto A",
+    "stock": 44
+  },
+  {
+    "id": 7,
+    "name": "Prodotto B",
+    "price": "95.00",
+    "description": "Descrizione del Prodotto B",
+    "stock": 18
+  },
+  {
+    "id": 8,
+    "name": "Prodotto C",
+    "price": "78.00",
+    "description": "Descrizione del Prodotto C",
+    "stock": 67
+  },
+  {
+    "id": 9,
+    "name": "Prodotto D",
+    "price": "42.00",
+    "description": "Descrizione del Prodotto D",
+    "stock": 25
+  },
+  {
+    "id": 10,
+    "name": "Prodotto E",
+    "price": "56.00",
+    "description": "Descrizione del Prodotto E",
+    "stock": 91
+  }
+]

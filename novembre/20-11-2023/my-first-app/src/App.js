@@ -4,6 +4,7 @@ import sum, { multiply, myFavouriteOperation } from './utils'
 import Student from './Student';
 import Section from './Section';
 import Solution from './Solution';
+import Counter from '../../../21-11-2023/state-app/src/Counter';
 
 console.log(sum(2, 2));
 console.log(multiply(3, 2));
@@ -74,9 +75,9 @@ function HelloWorld() {
         <MultipleFirstLevelElements /> *///}
 {/*      <MakeHobbies /> */ }
 {/*         <Student /> */ }
-     // </>
-    //);
-  //}
+// </>
+//);
+//}
 //return <h1>Boring, I already know everything</h1>
 /*   return (
     <div className="App">
@@ -111,10 +112,8 @@ function App() {
 
       <Section
         title="React components"
-
       >
         <p>I componenti React sono divertentissimi</p>
-
       </Section>
       <Section
         className="special-section"
@@ -135,9 +134,9 @@ function App() {
         onClick={() => { console.log("react state") }}
         children={() => { <p>altro testo</p> }}
       /> */}
+      <Counter></Counter>
 
-  
-   
+
 
     </>
   );
