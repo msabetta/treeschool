@@ -32,11 +32,7 @@ function App() {
       /> */}
 
       <StringEsercitazione
-        initialString=""
-      />
-
-      <StringEsercitazione
-        initialString="initial state "
+        initialString="io dico che "
       />
 
 
